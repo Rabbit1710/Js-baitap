@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>Danh sach trai cay</h5>
+    <ul id="dstc"></ul>
+    <script>
+        let dstc = '';
+        const danhsachtraicay = ['táo','bơ', 'cam'];
+        
+        for (let index = 0; index < danhsachtraicay.length; index++){
+            const element = danhsachtraicay[index];
+            // console.log(typeof element);
+            dstc += '<li>' + element + '</li>';
+            // console.log(dstc);
+          
+           
+        } 
+        document.getElementById('dstc').innerHTML = dstc;
+    </script>
+</body>
+</html>
